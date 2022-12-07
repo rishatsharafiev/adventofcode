@@ -13,8 +13,8 @@ fn main() -> io::Result<()> {
                 if s.is_empty() {
                     if counter > sum {
                         sum = counter;
-                        counter = 0;
                     }
+                    counter = 0;
                 } else {
                     counter += s.trim().parse::<i32>().unwrap();
                 }
